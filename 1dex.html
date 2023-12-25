@@ -78,6 +78,23 @@
             height: 5px; /* Adjusted height */
             background-color: #fff;
         }
+
+        .page-links {
+            position: absolute;
+            top: 85%; /* Adjusted position */
+            transform: translateX(-50%);
+            left: 50%;
+            display: flex;
+            justify-content: space-between;
+            width: 200px; /* Adjusted width */
+        }
+
+        .page-link {
+            width: 45px; /* Adjusted width */
+            height: 5px; /* Adjusted height */
+            background-color: #fff;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -103,6 +120,16 @@
         <button class="discover-button">Discover</button>
     </div>
 
+     <!-- Page Links -->
+     <div class="page-links">
+        <!-- Page 1 Link -->
+        <div class="page-link" onclick="navigateToPage('page1')"></div>
+        <!-- Page 2 Link -->
+        <div class="page-link" onclick="navigateToPage('page2')"></div>
+        <!-- Page 3 Link -->
+        <div class="page-link" onclick="navigateToPage('page3')"></div>
+    </div>
+
     <!-- Menu Icon -->
     <div class="menu-icon">
         <div class="menu-line"></div>
@@ -112,5 +139,12 @@
 
     <!-- Your page content goes here -->
 
+    <script>
+        // JavaScript function to handle page navigation
+        function navigateToPage(page) {
+            // Add your logic to navigate to the respective page
+            console.log('Navigating to ' + page);
+        }
+    </script>
 </body>
 </html>
